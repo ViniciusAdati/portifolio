@@ -1,14 +1,24 @@
 interface Skill {
   name: string;
-  category: "Frontend" | "Backend" | "Dados & IA" | "Infra";
+  category:
+    | "Frontend"
+    | "Backend"
+    | "Dados & IA"
+    | "Modelagem & Dados"
+    | "Docker & AWS"
+    | "Infra";
 }
 
 const skills: Skill[] = [
   { name: "React", category: "Frontend" },
   { name: "TypeScript", category: "Frontend" },
-  { name: "Bancos de Dados", category: "Modelagem & Dados" },
-  { name: "CI/CD & Pipelines", category: "Docker & AWS" },
+  { name: "Redux", category: "Frontend" },
+  { name: "NestJS", category: "Backend" },
+  { name: "Node.js", category: "Backend" },
   { name: "Python", category: "Dados & IA" },
+  { name: "PostgreSQL", category: "Modelagem & Dados" },
+  { name: "MySQL", category: "Modelagem & Dados" },
+  { name: "Docker", category: "Docker & AWS" },
   { name: "Linux", category: "Infra" },
 ];
 
